@@ -9,11 +9,6 @@ assets/
   smartbox_articulated.usd     # smartbox 成品 (单文件, 4 个 revolute 门铰链), 详见 smartbox_articulated.md
   notray_tray.usd              # 扫描重建的操作台 (薄壳视觉网格 + 透明承载面)
   alphabot2/                   # 机器人 alphabot2 (入口 alphabot2_isaac6_clean.usda, payloads/ 为相对引用, 需整体拷贝)
-  src/
-    smartbox_m.usd             # CAD 转换得到的米制/Y-up 源件, build 脚本输入
-    smartbox_articulated_ref.usd  # build 输出 (引用 smartbox_m.usd), flatten 脚本输入
-build_smartbox_articulated.py  # smartbox_m.usd -> src/smartbox_articulated_ref.usd (材质 + 关节)
-flatten_smartbox.py            # ref 版展平 -> assets/smartbox_articulated.usd
 scene_smartbox.py              # 机器人 + 操作台 + smartbox 组合场景, 渲确认图
 drop_smartbox.py               # 门打开, 往 smartbox 上扔物体, 环绕渲染
 shoot_smartbox.py              # 四面向 smartbox 发射 cube, 环绕渲染
@@ -39,9 +34,5 @@ archive/                       # 历史脚本和中间产物 (已 gitignore, 不
 ./python.sh shoot_smartbox.py     # 发射 cube -> out/shoot_frames
 ```
 
-重新生成 smartbox 资产 (只需 `pxr`)：
-
-```bash
-python3 build_smartbox_articulated.py   # -> assets/src/smartbox_articulated_ref.usd
-python3 flatten_smartbox.py             # -> assets/smartbox_articulated.usd
-```
+`assets/smartbox_articulated.usd` 是单文件, 关节、材质、碰撞等参数直接编辑它即可 (Isaac Sim 或 `pxr`)。
+生成它的 build/flatten 脚本和 CAD 源件不在仓库里, 留在本地 `archive/smartbox_build/`。
