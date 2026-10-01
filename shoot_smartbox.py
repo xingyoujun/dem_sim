@@ -5,9 +5,11 @@
 """
 import argparse, math, os, random, zlib, struct
 
+ROOT = os.path.dirname(os.path.abspath(__file__))
+
 parser = argparse.ArgumentParser()
-parser.add_argument("--asset", default="/workspace/out/ship/smartbox_articulated.usd")
-parser.add_argument("--outdir", default="/workspace/out/shoot_frames")
+parser.add_argument("--asset", default=os.path.join(ROOT, "assets/smartbox_articulated.usd"))
+parser.add_argument("--outdir", default=os.path.join(ROOT, "out/shoot_frames"))
 parser.add_argument("--width", type=int, default=1280)
 parser.add_argument("--height", type=int, default=720)
 parser.add_argument("--fps", type=int, default=30)

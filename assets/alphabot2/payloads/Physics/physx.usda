@@ -1,0 +1,920 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.0"
+    }
+    defaultPrim = "alphabot2"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpk8mwcsb2/alphabot2.usdc
+
+
+Generated from Composed Stage of root layer /home/jerome/lerobot-ros-agent-aibot2/isaac_sim/robot/usd_cache/usdex/alphabot2.usdc
+
+
+Generated from Composed Stage of root layer /home/jerome/lerobot-ros-agent-aibot2/isaac_sim/robot/usd_cache/temp/alphabot2_isaac6_clean.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "alphabot2"
+{
+    over "Geometry"
+    {
+        over "base_link" (
+            delete apiSchemas = ["NewtonArticulationRootAPI"]
+            prepend apiSchemas = ["PhysxArticulationAPI"]
+        )
+        {
+            bool physxArticulation:enabledSelfCollisions = 0
+
+            over "driven_wheel_lf_link_v"
+            {
+                over "driven_wheel_lf_link_h"
+                {
+                    over "driven_wheel_lf_link_h"
+                    {
+                    }
+
+                    over "driven_wheel_lf_link_h_1"
+                    {
+                    }
+                }
+
+                over "driven_wheel_lf_link_v"
+                {
+                }
+
+                over "driven_wheel_lf_link_v_1"
+                {
+                }
+            }
+
+            over "driven_wheel_rf_link_v"
+            {
+                over "driven_wheel_rf_link_h"
+                {
+                    over "driven_wheel_rf_link_h"
+                    {
+                    }
+
+                    over "driven_wheel_rf_link_h_1"
+                    {
+                    }
+                }
+
+                over "driven_wheel_rf_link_v"
+                {
+                }
+
+                over "driven_wheel_rf_link_v_1"
+                {
+                }
+            }
+
+            over "driven_wheel_lr_link_v"
+            {
+                over "driven_wheel_lr_link_h"
+                {
+                    over "driven_wheel_lr_link_h"
+                    {
+                    }
+
+                    over "driven_wheel_lr_link_h_1"
+                    {
+                    }
+                }
+
+                over "driven_wheel_lr_link_v"
+                {
+                }
+
+                over "driven_wheel_lr_link_v_1"
+                {
+                }
+            }
+
+            over "driven_wheel_rr_link_v"
+            {
+                over "driven_wheel_rr_link_h"
+                {
+                    over "driven_wheel_rr_link_h"
+                    {
+                    }
+
+                    over "driven_wheel_rr_link_h_1"
+                    {
+                    }
+                }
+
+                over "driven_wheel_rr_link_v"
+                {
+                }
+
+                over "driven_wheel_rr_link_v_1"
+                {
+                }
+            }
+
+            over "driving_wheel_left_link"
+            {
+                over "driving_wheel_left_link"
+                {
+                }
+
+                over "driving_wheel_left_link_1"
+                {
+                }
+            }
+
+            over "driving_wheel_right_link"
+            {
+                over "driving_wheel_right_link"
+                {
+                }
+
+                over "driving_wheel_right_link_1"
+                {
+                }
+            }
+
+            over "ankle_pitch_link"
+            {
+                over "knee_pitch_link"
+                {
+                    over "waist_pitch_link"
+                    {
+                        over "waist_yaw_link"
+                        {
+                            over "head_yaw_link"
+                            {
+                                over "head_pitch_link"
+                                {
+                                    over "camera_top_link"
+                                    {
+                                        over "sphere"
+                                        {
+                                        }
+                                    }
+
+                                    over "head_pitch_link"
+                                    {
+                                    }
+
+                                    over "head_pitch_link_1"
+                                    {
+                                    }
+                                }
+
+                                over "head_yaw_link"
+                                {
+                                }
+
+                                over "head_yaw_link_1"
+                                {
+                                }
+                            }
+
+                            over "arm_left_baselink"
+                            {
+                                over "ZPF_left_Link1"
+                                {
+                                    over "ZPF_left_Link2"
+                                    {
+                                        over "ZPF_left_Link3"
+                                        {
+                                            over "ZPF_left_Link4"
+                                            {
+                                                over "ZPF_left_Link5"
+                                                {
+                                                    over "ZPF_left_Link6"
+                                                    {
+                                                        over "ZPF_left_Link7"
+                                                        {
+                                                            over "ZPF_left_Link8"
+                                                            {
+                                                                over "a_2FEG_l_baselink"
+                                                                {
+                                                                    over "a_2FEG_l_Link1"
+                                                                    {
+                                                                        over "a_2FEG_l_Link5"
+                                                                        {
+                                                                            over "a_2FEG_l_Link5"
+                                                                            {
+                                                                            }
+
+                                                                            over "a_2FEG_l_Link5_1"
+                                                                            {
+                                                                            }
+                                                                        }
+
+                                                                        over "a_2FEG_l_Link1"
+                                                                        {
+                                                                        }
+
+                                                                        over "a_2FEG_l_Link1_1"
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "a_2FEG_l_Link2"
+                                                                    {
+                                                                        over "a_2FEG_l_Link2"
+                                                                        {
+                                                                        }
+
+                                                                        over "a_2FEG_l_Link2_1"
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "a_2FEG_l_Link3"
+                                                                    {
+                                                                        over "a_2FEG_l_Link3"
+                                                                        {
+                                                                        }
+
+                                                                        over "a_2FEG_l_Link3_1"
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "a_2FEG_l_Link4"
+                                                                    {
+                                                                        over "a_2FEG_l_Link6"
+                                                                        {
+                                                                            over "a_2FEG_l_Link6"
+                                                                            {
+                                                                            }
+
+                                                                            over "a_2FEG_l_Link6_1"
+                                                                            {
+                                                                            }
+                                                                        }
+
+                                                                        over "a_2FEG_l_Link4"
+                                                                        {
+                                                                        }
+
+                                                                        over "a_2FEG_l_Link4_1"
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "left_ee_link"
+                                                                    {
+                                                                        over "sphere"
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "a_2FEG_l_baselink"
+                                                                    {
+                                                                    }
+
+                                                                    over "a_2FEG_l_baselink_1"
+                                                                    {
+                                                                    }
+                                                                }
+
+                                                                over "ZPF_left_Link8"
+                                                                {
+                                                                }
+
+                                                                over "ZPF_left_Link8_1"
+                                                                {
+                                                                }
+                                                            }
+
+                                                            over "ZPF_left_Link7"
+                                                            {
+                                                            }
+
+                                                            over "ZPF_left_Link7_1"
+                                                            {
+                                                            }
+                                                        }
+
+                                                        over "ZPF_left_Link6"
+                                                        {
+                                                        }
+
+                                                        over "ZPF_left_Link6_1"
+                                                        {
+                                                        }
+                                                    }
+
+                                                    over "ZPF_left_Link5"
+                                                    {
+                                                    }
+
+                                                    over "ZPF_left_Link5_1"
+                                                    {
+                                                    }
+                                                }
+
+                                                over "ZPF_left_Link4"
+                                                {
+                                                }
+
+                                                over "ZPF_left_Link4_1"
+                                                {
+                                                }
+                                            }
+
+                                            over "ZPF_left_Link3"
+                                            {
+                                            }
+
+                                            over "ZPF_left_Link3_1"
+                                            {
+                                            }
+                                        }
+
+                                        over "ZPF_left_Link2"
+                                        {
+                                        }
+
+                                        over "ZPF_left_Link2_1"
+                                        {
+                                        }
+                                    }
+
+                                    over "ZPF_left_Link1"
+                                    {
+                                    }
+
+                                    over "ZPF_left_Link1_1"
+                                    {
+                                    }
+                                }
+
+                                over "arm_left_baselink"
+                                {
+                                }
+
+                                over "arm_left_baselink_1"
+                                {
+                                }
+                            }
+
+                            over "arm_right_baselink"
+                            {
+                                over "ZPF_right_Link1"
+                                {
+                                    over "ZPF_right_Link2"
+                                    {
+                                        over "ZPF_right_Link3"
+                                        {
+                                            over "ZPF_right_Link4"
+                                            {
+                                                over "ZPF_right_Link5"
+                                                {
+                                                    over "ZPF_right_Link6"
+                                                    {
+                                                        over "ZPF_right_Link7"
+                                                        {
+                                                            over "ZPF_right_Link8"
+                                                            {
+                                                                over "a_2FEG_r_baselink"
+                                                                {
+                                                                    over "a_2FEG_r_Link1"
+                                                                    {
+                                                                        over "a_2FEG_r_Link5"
+                                                                        {
+                                                                            over "a_2FEG_r_Link5"
+                                                                            {
+                                                                            }
+
+                                                                            over "a_2FEG_r_Link5_1"
+                                                                            {
+                                                                            }
+                                                                        }
+
+                                                                        over "a_2FEG_r_Link1"
+                                                                        {
+                                                                        }
+
+                                                                        over "a_2FEG_r_Link1_1"
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "a_2FEG_r_Link2"
+                                                                    {
+                                                                        over "a_2FEG_r_Link2"
+                                                                        {
+                                                                        }
+
+                                                                        over "a_2FEG_r_Link2_1"
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "a_2FEG_r_Link3"
+                                                                    {
+                                                                        over "a_2FEG_r_Link3"
+                                                                        {
+                                                                        }
+
+                                                                        over "a_2FEG_r_Link3_1"
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "a_2FEG_r_Link4"
+                                                                    {
+                                                                        over "a_2FEG_r_Link6"
+                                                                        {
+                                                                            over "a_2FEG_r_Link6"
+                                                                            {
+                                                                            }
+
+                                                                            over "a_2FEG_r_Link6_1"
+                                                                            {
+                                                                            }
+                                                                        }
+
+                                                                        over "a_2FEG_r_Link4"
+                                                                        {
+                                                                        }
+
+                                                                        over "a_2FEG_r_Link4_1"
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "right_ee_link"
+                                                                    {
+                                                                        over "sphere"
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "a_2FEG_r_baselink"
+                                                                    {
+                                                                    }
+
+                                                                    over "a_2FEG_r_baselink_1"
+                                                                    {
+                                                                    }
+                                                                }
+
+                                                                over "ZPF_right_Link8"
+                                                                {
+                                                                }
+
+                                                                over "ZPF_right_Link8_1"
+                                                                {
+                                                                }
+                                                            }
+
+                                                            over "ZPF_right_Link7"
+                                                            {
+                                                            }
+
+                                                            over "ZPF_right_Link7_1"
+                                                            {
+                                                            }
+                                                        }
+
+                                                        over "ZPF_right_Link6"
+                                                        {
+                                                        }
+
+                                                        over "ZPF_right_Link6_1"
+                                                        {
+                                                        }
+                                                    }
+
+                                                    over "ZPF_right_Link5"
+                                                    {
+                                                    }
+
+                                                    over "ZPF_right_Link5_1"
+                                                    {
+                                                    }
+                                                }
+
+                                                over "ZPF_right_Link4"
+                                                {
+                                                }
+
+                                                over "ZPF_right_Link4_1"
+                                                {
+                                                }
+                                            }
+
+                                            over "ZPF_right_Link3"
+                                            {
+                                            }
+
+                                            over "ZPF_right_Link3_1"
+                                            {
+                                            }
+                                        }
+
+                                        over "ZPF_right_Link2"
+                                        {
+                                        }
+
+                                        over "ZPF_right_Link2_1"
+                                        {
+                                        }
+                                    }
+
+                                    over "ZPF_right_Link1"
+                                    {
+                                    }
+
+                                    over "ZPF_right_Link1_1"
+                                    {
+                                    }
+                                }
+
+                                over "arm_right_baselink"
+                                {
+                                }
+
+                                over "arm_right_baselink_1"
+                                {
+                                }
+                            }
+
+                            over "waist_yaw_link"
+                            {
+                            }
+
+                            over "waist_yaw_link_1"
+                            {
+                            }
+                        }
+
+                        over "waist_pitch_link"
+                        {
+                        }
+
+                        over "waist_pitch_link_1"
+                        {
+                        }
+                    }
+
+                    over "knee_pitch_link"
+                    {
+                    }
+
+                    over "knee_pitch_link_1"
+                    {
+                    }
+                }
+
+                over "ankle_pitch_link"
+                {
+                }
+
+                over "ankle_pitch_link_1"
+                {
+                }
+            }
+
+            over "base_link"
+            {
+            }
+
+            over "base_link_1"
+            {
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        over "driven_wheel_lf_joint_v" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_lf_joint_h" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_rf_joint_v" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_rf_joint_h" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_lr_joint_v" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_lr_joint_h" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_rr_joint_v" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_rr_joint_h" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+        }
+
+        over "driving_wheel_left_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+        }
+
+        over "driving_wheel_right_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+        }
+
+        over "ankle_pitch_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 108.00001
+        }
+
+        over "knee_pitch_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 108.00001
+        }
+
+        over "waist_pitch_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 138
+        }
+
+        over "waist_yaw_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 204.00002
+        }
+
+        over "head_yaw_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 540
+        }
+
+        over "head_pitch_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 540
+        }
+
+        over "ZPF_left_Joint1" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_left_Joint2" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_left_Joint3" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_left_Joint4" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_left_Joint5" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_left_Joint6" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_left_Joint7" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "a_2FEG_l_Joint1" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "a_2FEG_l_Joint5" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "a_2FEG_l_Joint2" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "a_2FEG_l_Joint3" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "a_2FEG_l_Joint4" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "a_2FEG_l_Joint6" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "ZPF_right_Joint1" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_right_Joint2" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_right_Joint3" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_right_Joint4" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_right_Joint5" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_right_Joint6" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "ZPF_right_Joint7" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 179.90875
+        }
+
+        over "a_2FEG_r_Joint1" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "a_2FEG_r_Joint5" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "a_2FEG_r_Joint2" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "a_2FEG_r_Joint3" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "a_2FEG_r_Joint4" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "a_2FEG_r_Joint6" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57.29578
+        }
+
+        over "root_joint"
+        {
+        }
+
+        over "arm_left_baselink_joint"
+        {
+        }
+
+        over "arm_right_baselink_joint"
+        {
+        }
+
+        over "camera_top_joint"
+        {
+        }
+
+        over "ZPF_left_Joint8"
+        {
+        }
+
+        over "ZPF_right_Joint8"
+        {
+        }
+
+        over "a_2FEG_l_baselink_joint"
+        {
+        }
+
+        over "a_2FEG_r_baselink_joint"
+        {
+        }
+
+        over "left_ee_joint"
+        {
+        }
+
+        over "right_ee_joint"
+        {
+        }
+    }
+}
+

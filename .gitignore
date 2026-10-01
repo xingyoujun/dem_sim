@@ -1,3 +1,4 @@
 archive/
+out/
 __pycache__/
 *.pyc

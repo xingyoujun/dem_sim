@@ -6,11 +6,12 @@
   2. 删掉柜体里那 4 个 active=false 的门 prim —— 停用只是不参与合成,
      几何还在文件里白占体积, 展平后它们成了本地 spec 才能真正删除
 """
-import sys
+import os, sys
 from pxr import Usd, UsdGeom, UsdPhysics, Sdf
 
-SRC = sys.argv[1] if len(sys.argv) > 1 else "smartbox_articulated_ref.usd"
-DST = sys.argv[2] if len(sys.argv) > 2 else "smartbox_articulated.usd"
+HERE = os.path.dirname(os.path.abspath(__file__))
+SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "assets/src/smartbox_articulated_ref.usd")
+DST = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "assets/smartbox_articulated.usd")
 
 stage = Usd.Stage.Open(SRC)
 flat = stage.Flatten()

@@ -1,0 +1,730 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.0"
+    }
+    defaultPrim = "alphabot2"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpk8mwcsb2/alphabot2.usdc
+
+
+Generated from Composed Stage of root layer /home/jerome/lerobot-ros-agent-aibot2/isaac_sim/robot/usd_cache/usdex/alphabot2.usdc
+
+
+Generated from Composed Stage of root layer /home/jerome/lerobot-ros-agent-aibot2/isaac_sim/robot/usd_cache/temp/alphabot2_isaac6_clean.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "alphabot2" (
+    prepend apiSchemas = ["IsaacRobotAPI", "IsaacLinkAPI"]
+)
+{
+    custom rel isaac:physics:robotJoints
+    prepend rel isaac:physics:robotJoints = [
+        </alphabot2/Physics/driven_wheel_lf_joint_v>,
+        </alphabot2/Physics/driven_wheel_rf_joint_v>,
+        </alphabot2/Physics/driven_wheel_lr_joint_v>,
+        </alphabot2/Physics/driven_wheel_rr_joint_v>,
+        </alphabot2/Physics/driving_wheel_left_joint>,
+        </alphabot2/Physics/driving_wheel_right_joint>,
+        </alphabot2/Physics/ankle_pitch_joint>,
+        </alphabot2/Physics/root_joint>,
+        </alphabot2/Physics/driven_wheel_lf_joint_h>,
+        </alphabot2/Physics/driven_wheel_rf_joint_h>,
+        </alphabot2/Physics/driven_wheel_lr_joint_h>,
+        </alphabot2/Physics/driven_wheel_rr_joint_h>,
+        </alphabot2/Physics/knee_pitch_joint>,
+        </alphabot2/Physics/waist_pitch_joint>,
+        </alphabot2/Physics/waist_yaw_joint>,
+        </alphabot2/Physics/head_yaw_joint>,
+        </alphabot2/Physics/arm_left_baselink_joint>,
+        </alphabot2/Physics/arm_right_baselink_joint>,
+        </alphabot2/Physics/head_pitch_joint>,
+        </alphabot2/Physics/ZPF_left_Joint1>,
+        </alphabot2/Physics/ZPF_right_Joint1>,
+        </alphabot2/Physics/camera_top_joint>,
+        </alphabot2/Physics/ZPF_left_Joint2>,
+        </alphabot2/Physics/ZPF_right_Joint2>,
+        </alphabot2/Physics/ZPF_left_Joint3>,
+        </alphabot2/Physics/ZPF_right_Joint3>,
+        </alphabot2/Physics/ZPF_left_Joint4>,
+        </alphabot2/Physics/ZPF_right_Joint4>,
+        </alphabot2/Physics/ZPF_left_Joint5>,
+        </alphabot2/Physics/ZPF_right_Joint5>,
+        </alphabot2/Physics/ZPF_left_Joint6>,
+        </alphabot2/Physics/ZPF_right_Joint6>,
+        </alphabot2/Physics/ZPF_left_Joint7>,
+        </alphabot2/Physics/ZPF_right_Joint7>,
+        </alphabot2/Physics/ZPF_left_Joint8>,
+        </alphabot2/Physics/ZPF_right_Joint8>,
+        </alphabot2/Physics/a_2FEG_l_baselink_joint>,
+        </alphabot2/Physics/a_2FEG_r_baselink_joint>,
+        </alphabot2/Physics/a_2FEG_l_Joint1>,
+        </alphabot2/Physics/a_2FEG_l_Joint2>,
+        </alphabot2/Physics/a_2FEG_l_Joint3>,
+        </alphabot2/Physics/a_2FEG_l_Joint4>,
+        </alphabot2/Physics/left_ee_joint>,
+        </alphabot2/Physics/a_2FEG_r_Joint1>,
+        </alphabot2/Physics/a_2FEG_r_Joint2>,
+        </alphabot2/Physics/a_2FEG_r_Joint3>,
+        </alphabot2/Physics/a_2FEG_r_Joint4>,
+        </alphabot2/Physics/right_ee_joint>,
+        </alphabot2/Physics/a_2FEG_l_Joint5>,
+        </alphabot2/Physics/a_2FEG_l_Joint6>,
+        </alphabot2/Physics/a_2FEG_r_Joint5>,
+        </alphabot2/Physics/a_2FEG_r_Joint6>,
+    ]
+    custom rel isaac:physics:robotLinks
+    prepend rel isaac:physics:robotLinks = [
+        </alphabot2/Geometry/base_link>,
+        </alphabot2/Geometry/base_link/driven_wheel_lf_link_v>,
+        </alphabot2/Geometry/base_link/driven_wheel_rf_link_v>,
+        </alphabot2/Geometry/base_link/driven_wheel_lr_link_v>,
+        </alphabot2/Geometry/base_link/driven_wheel_rr_link_v>,
+        </alphabot2/Geometry/base_link/driving_wheel_left_link>,
+        </alphabot2/Geometry/base_link/driving_wheel_right_link>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link>,
+        </alphabot2/Geometry/base_link/driven_wheel_lf_link_v/driven_wheel_lf_link_h>,
+        </alphabot2/Geometry/base_link/driven_wheel_rf_link_v/driven_wheel_rf_link_h>,
+        </alphabot2/Geometry/base_link/driven_wheel_lr_link_v/driven_wheel_lr_link_h>,
+        </alphabot2/Geometry/base_link/driven_wheel_rr_link_v/driven_wheel_rr_link_h>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/head_yaw_link>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/head_yaw_link/head_pitch_link>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/head_yaw_link/head_pitch_link/camera_top_link>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6/ZPF_left_Link7>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6/ZPF_right_Link7>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6/ZPF_left_Link7/ZPF_left_Link8>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6/ZPF_right_Link7/ZPF_right_Link8>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6/ZPF_left_Link7/ZPF_left_Link8/a_2FEG_l_baselink>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6/ZPF_right_Link7/ZPF_right_Link8/a_2FEG_r_baselink>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6/ZPF_left_Link7/ZPF_left_Link8/a_2FEG_l_baselink/a_2FEG_l_Link1>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6/ZPF_left_Link7/ZPF_left_Link8/a_2FEG_l_baselink/a_2FEG_l_Link2>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6/ZPF_left_Link7/ZPF_left_Link8/a_2FEG_l_baselink/a_2FEG_l_Link3>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6/ZPF_left_Link7/ZPF_left_Link8/a_2FEG_l_baselink/a_2FEG_l_Link4>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6/ZPF_left_Link7/ZPF_left_Link8/a_2FEG_l_baselink/left_ee_link>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6/ZPF_right_Link7/ZPF_right_Link8/a_2FEG_r_baselink/a_2FEG_r_Link1>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6/ZPF_right_Link7/ZPF_right_Link8/a_2FEG_r_baselink/a_2FEG_r_Link2>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6/ZPF_right_Link7/ZPF_right_Link8/a_2FEG_r_baselink/a_2FEG_r_Link3>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6/ZPF_right_Link7/ZPF_right_Link8/a_2FEG_r_baselink/a_2FEG_r_Link4>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6/ZPF_right_Link7/ZPF_right_Link8/a_2FEG_r_baselink/right_ee_link>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6/ZPF_left_Link7/ZPF_left_Link8/a_2FEG_l_baselink/a_2FEG_l_Link1/a_2FEG_l_Link5>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_left_baselink/ZPF_left_Link1/ZPF_left_Link2/ZPF_left_Link3/ZPF_left_Link4/ZPF_left_Link5/ZPF_left_Link6/ZPF_left_Link7/ZPF_left_Link8/a_2FEG_l_baselink/a_2FEG_l_Link4/a_2FEG_l_Link6>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6/ZPF_right_Link7/ZPF_right_Link8/a_2FEG_r_baselink/a_2FEG_r_Link1/a_2FEG_r_Link5>,
+        </alphabot2/Geometry/base_link/ankle_pitch_link/knee_pitch_link/waist_pitch_link/waist_yaw_link/arm_right_baselink/ZPF_right_Link1/ZPF_right_Link2/ZPF_right_Link3/ZPF_right_Link4/ZPF_right_Link5/ZPF_right_Link6/ZPF_right_Link7/ZPF_right_Link8/a_2FEG_r_baselink/a_2FEG_r_Link4/a_2FEG_r_Link6>,
+    ]
+
+    over "Physics"
+    {
+        over "driven_wheel_lf_joint_v" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_rf_joint_v" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_lr_joint_v" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_rr_joint_v" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "driving_wheel_left_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "driving_wheel_right_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ankle_pitch_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "root_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_lf_joint_h" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_rf_joint_h" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_lr_joint_h" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "driven_wheel_rr_joint_h" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "knee_pitch_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "waist_pitch_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "waist_yaw_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "head_yaw_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_left_baselink_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "arm_right_baselink_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "head_pitch_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_left_Joint1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_right_Joint1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "camera_top_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_left_Joint2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_right_Joint2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_left_Joint3" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_right_Joint3" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_left_Joint4" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_right_Joint4" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_left_Joint5" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_right_Joint5" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_left_Joint6" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_right_Joint6" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_left_Joint7" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_right_Joint7" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_left_Joint8" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "ZPF_right_Joint8" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_l_baselink_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_r_baselink_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_l_Joint1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_l_Joint2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_l_Joint3" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_l_Joint4" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "left_ee_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_r_Joint1" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_r_Joint2" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_r_Joint3" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_r_Joint4" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "right_ee_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_l_Joint5" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_l_Joint6" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_r_Joint5" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "a_2FEG_r_Joint6" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "base_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+            over "driven_wheel_lf_link_v" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "driven_wheel_lf_link_h" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+            }
+
+            over "driven_wheel_rf_link_v" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "driven_wheel_rf_link_h" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+            }
+
+            over "driven_wheel_lr_link_v" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "driven_wheel_lr_link_h" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+            }
+
+            over "driven_wheel_rr_link_v" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "driven_wheel_rr_link_h" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                }
+            }
+
+            over "driving_wheel_left_link" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "driving_wheel_right_link" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+            }
+
+            over "ankle_pitch_link" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "knee_pitch_link" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "waist_pitch_link" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                        over "waist_yaw_link" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "head_yaw_link" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                                over "head_pitch_link" (
+                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                )
+                                {
+                                    over "camera_top_link" (
+                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                    )
+                                    {
+                                    }
+                                }
+                            }
+
+                            over "arm_left_baselink" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                                over "ZPF_left_Link1" (
+                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                )
+                                {
+                                    over "ZPF_left_Link2" (
+                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                    )
+                                    {
+                                        over "ZPF_left_Link3" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                            over "ZPF_left_Link4" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                                over "ZPF_left_Link5" (
+                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                )
+                                                {
+                                                    over "ZPF_left_Link6" (
+                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                    )
+                                                    {
+                                                        over "ZPF_left_Link7" (
+                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                        )
+                                                        {
+                                                            over "ZPF_left_Link8" (
+                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                            )
+                                                            {
+                                                                over "a_2FEG_l_baselink" (
+                                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                )
+                                                                {
+                                                                    over "a_2FEG_l_Link1" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                        over "a_2FEG_l_Link5" (
+                                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                        )
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "a_2FEG_l_Link2" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                    }
+
+                                                                    over "a_2FEG_l_Link3" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                    }
+
+                                                                    over "a_2FEG_l_Link4" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                        over "a_2FEG_l_Link6" (
+                                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                        )
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "left_ee_link" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            over "arm_right_baselink" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                                over "ZPF_right_Link1" (
+                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                )
+                                {
+                                    over "ZPF_right_Link2" (
+                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                    )
+                                    {
+                                        over "ZPF_right_Link3" (
+                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                        )
+                                        {
+                                            over "ZPF_right_Link4" (
+                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                            )
+                                            {
+                                                over "ZPF_right_Link5" (
+                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                )
+                                                {
+                                                    over "ZPF_right_Link6" (
+                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                    )
+                                                    {
+                                                        over "ZPF_right_Link7" (
+                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                        )
+                                                        {
+                                                            over "ZPF_right_Link8" (
+                                                                prepend apiSchemas = ["IsaacLinkAPI"]
+                                                            )
+                                                            {
+                                                                over "a_2FEG_r_baselink" (
+                                                                    prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                )
+                                                                {
+                                                                    over "a_2FEG_r_Link1" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                        over "a_2FEG_r_Link5" (
+                                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                        )
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "a_2FEG_r_Link2" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                    }
+
+                                                                    over "a_2FEG_r_Link3" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                    }
+
+                                                                    over "a_2FEG_r_Link4" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                        over "a_2FEG_r_Link6" (
+                                                                            prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                        )
+                                                                        {
+                                                                        }
+                                                                    }
+
+                                                                    over "right_ee_link" (
+                                                                        prepend apiSchemas = ["IsaacLinkAPI"]
+                                                                    )
+                                                                    {
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

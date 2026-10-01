@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""由 smartbox_m.usd (米制/非实例化/Y-up) 生成带 articulation 的 smartbox_articulated.usd。
+"""由 smartbox_m.usd (米制/非实例化/Y-up) 生成带 articulation 的 assets/src/smartbox_articulated_ref.usd
+(引用 smartbox_m.usd), 再用 flatten_smartbox.py 展平成 assets/smartbox_articulated.usd。
 
 做两件事:
   1. 材质: 柜体白色, 支架灰色 (用 strongerThanDescendants 盖掉 CAD 自带的占位色)
@@ -8,11 +9,15 @@
 坐标说明: 源件是 Y-up(Y 为竖直), 所有 body/joint 都在这个原始系里定义;
 /SmartBox 顶层再统一 rotateX 90° 摆正并落地。纯旋转+平移, 不引入缩放, PhysX 安全。
 """
+import os
 import numpy as np
 from pxr import Usd, UsdGeom, UsdShade, UsdPhysics, Gf, Sdf
 
-SRC = "smartbox_m.usd"
-DST = "smartbox_articulated.usd"
+HERE = os.path.dirname(os.path.abspath(__file__))
+SRC_DIR = os.path.join(HERE, "assets", "src")
+SRC_NAME = "smartbox_m.usd"
+SRC = os.path.join(SRC_DIR, SRC_NAME)
+DST = os.path.join(SRC_DIR, "smartbox_articulated_ref.usd")
 ASM = "C6007_SB_ID_M_ASM"
 
 # 门: (关节名, 源 prim 名, 铰链侧)  —— L=铰链在门的 -X 沿, R=在 +X 沿
@@ -58,7 +63,7 @@ rx.AddRotateXOp().Set(90.0)
 # ---- 柜体 ----
 cab = UsdGeom.Xform.Define(stage, "/SmartBox/cabinet")
 cab_geo = UsdGeom.Xform.Define(stage, "/SmartBox/cabinet/geo")
-cab_geo.GetPrim().GetReferences().AddReference(f"./{SRC}")
+cab_geo.GetPrim().GetReferences().AddReference(f"./{SRC_NAME}")
 
 # 门从柜体里摘掉, 否则会被算进柜体刚体
 for jn, d in info.items():
@@ -79,7 +84,7 @@ for jn, d in info.items():
     bx.ClearXformOpOrder()
     bx.AddTransformOp().Set(mat4(d["Wp"]))     # 补回父级累积变换
     g = UsdGeom.Xform.Define(stage, f"/SmartBox/{jn}/geo")
-    g.GetPrim().GetReferences().AddReference(f"./{SRC}", Sdf.Path(d["path"]))
+    g.GetPrim().GetReferences().AddReference(f"./{SRC_NAME}", Sdf.Path(d["path"]))
 
 # ---- 落地: 量一次再定 root 平移 ----
 t_root.Set(Gf.Vec3d(0, 0, 0))
